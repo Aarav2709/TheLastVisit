@@ -3,7 +3,7 @@ local runService = game:GetService("RunService")
 local input = game:GetService("UserInputService")
 local players = game:GetService("Players")
 
-CanToggleMouse = {allowed = false; activationkey = Enum.KeyCode.F;}
+CanToggleMouse = {allowed = true; activationkey = Enum.KeyCode.F;}
 CanViewBody = true
 Sensitivity = 0.25
 Smoothness = 0.1

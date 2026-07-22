@@ -55,3 +55,5 @@
 - I started with scripting, and successfully coded a First Person Camera, with Bobbing after 4 hours.
 - I modified player speeds to be slower, disabled most of the UI, and disable jumping and no walk sound (sounded bad) for more realism.
 - Added creepy background music too!
+- Disabled more useless stuff + optimized backend.
+- Added a loading screen, which took most of my time of the day.
