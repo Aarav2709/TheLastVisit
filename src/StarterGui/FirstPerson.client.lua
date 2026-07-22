@@ -12,7 +12,7 @@ FieldOfView = 95
 local cam = game.Workspace.CurrentCamera
 local player = players.LocalPlayer
 local m = player:GetMouse()
-m.Icon = "http://www.roblox.com/asset/?id=569021388"
+m.Icon = "http://www.roblox.com/asset/?id=4727487316"
 local character = player.Character or player.CharacterAdded:wait()
 local humanoidpart = character.HumanoidRootPart
 

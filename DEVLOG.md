@@ -49,7 +49,7 @@
 > The main thing that I realized while doing Optimizations was how assets were being rendered when the Game Loaded, and I ran several tests and found a perfect setting.
 - I fixed the First Floor's Light Sources and Added Lighting to Lamps.
 
-# 22nd of July, 2026
+## 22nd of July, 2026
 - I made the fireplace working, a lot of tuning work was done:  (thanks to maths, I learnt graphs and this made my work a lot more easier hah!)
 - Today, I decided to not build anymore and start scripting, which includes the core gameplay, and player interactions and UX.
 - I started with scripting, and successfully coded a First Person Camera, with Bobbing after 4 hours.
@@ -57,3 +57,12 @@
 - Added creepy background music too!
 - Disabled more useless stuff + optimized backend.
 - Added a loading screen, which took most of my time of the day.
+- Fixed numerous amount of bugs.
+
+## 23rd of July, 2026
+- I also commited the features that I was working on simultaneously since the beginning (happy that they are finally finished haha!):
+1) Introduction of the Story to the Player.
+2) Ending too!
+3) Alot more immersion stuff, with tons of bug fixes in my latest commit.
+> This almost took me a week. With background programming stuff.
+- Today I plan to finally begin with the Core Gameplay Development, which should be finished with 24 hours if everything goes accordingly to the plan. Good night!
