@@ -52,3 +52,6 @@
 # 22nd of July, 2026
 - I made the fireplace working, a lot of tuning work was done:  (thanks to maths, I learnt graphs and this made my work a lot more easier hah!)
 - Today, I decided to not build anymore and start scripting, which includes the core gameplay, and player interactions and UX.
+- I started with scripting, and successfully coded a First Person Camera, with Bobbing after 4 hours.
+- I modified player speeds to be slower, disabled most of the UI, and disable jumping and no walk sound (sounded bad) for more realism.
+- Added creepy background music too!
