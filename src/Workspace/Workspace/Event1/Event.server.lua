@@ -2,6 +2,17 @@ local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 
 local part = script.Parent -- The part players will touch
+-- Hide the part initially
+part.Transparency = 1
+part.CanCollide = false
+part.CanTouch = false
+
+-- Reveal it after 300 seconds
+task.delay(300, function()
+	part.Transparency = 0
+	part.CanCollide = true
+	part.CanTouch = true
+end)
 local guiTemplate = game.StarterGui:WaitForChild("EventStory") -- Reference to the GUI in StarterGui
 
 local touchedPlayers = {} -- Table to track players who have already triggered the GUI
@@ -14,10 +25,10 @@ local function playStory(gui)
 
 	-- Story scenes
 	local scenes = {
-		"I came back looking for a folder, but I left carrying memories I thought I'd lost forever.",
-		"Some goodbyes don't happen when someone leaves, they happen the day you finally return.",
-		"Life rarely gives us another chance to say the things we leave unsaid.",
-		"So before your last visit becomes your last chance, don't wait.",
+		"I came here expecting to say goodbye to a house. I didn't expect it to remind me of the life that once filled it.",
+		"Sometimes, it isn't the place we miss. It's the moments we unknowingly left behind.",
+		"We spend so much time believing there will always be another visit, another conversation, another chance.",
+		"So before today becomes another memory... don't wait."
 	}
 
 	local fadeDuration = 1.1 -- Time for fade-in and fade-out effects

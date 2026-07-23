@@ -4,14 +4,14 @@ local gui = script.Parent
 local bg = gui:WaitForChild("BG")
 local textLabel = bg:WaitForChild("TextLabel")
 local nextButton = bg:WaitForChild("TextButton")
-task.wait(12)
+task.wait(7)
 
 -- Story scenes
 local scenes = {
-	"I hadn't been back to my childhood home in almost eight years, but after receiving a call that it would be cleared out by the end of the week, I decided it was finally time to return.",
-	"There wasn't much left for me there except a blue folder containing a few important documents, or at least that's what I convinced myself before unlocking the front door.",
-	"I thought I would be in and out within a few minutes, collect the folder, lock the house one last time, and never have to look back again.",
-	"I didn't realize that sometimes it's not the things you go looking for that stay with you, but the things you never expected to find."
+	"It's been almost eight years since I last stepped into this house. After hearing it would finally be cleared out, I decided it was time for one last visit.",
+	"I wasn't looking for anything in particular. Maybe I just wanted to see it one last time before it became someone else's memory.",
+	"Everything was exactly where it had been left. The walls, the furniture, even the silence felt strangely familiar.",
+	"I thought I had left this place behind long ago. I didn't realize how much of it had quietly stayed with me."
 }
 
 -- Fade settings

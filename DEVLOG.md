@@ -1,68 +1,83 @@
 # Devlog
 
 ## 14th of July, 2026
-- I began with the development of assets after the theme was released.
-- I initially planned out on making a Large Bungalow Type-of house.
-- But eventually, I settled on a small, realistic looking house.
-- I planned the initial layout of the house.
+
+- Began planning the project immediately after the competition theme was revealed.
+- My initial concept was a large bungalow-style house, but after evaluating the project's scope, I redesigned it into a smaller, more realistic home.
+- Finalized the floor plan and overall layout that would serve as the foundation for the entire experience.
 
 ## 15th of July, 2026
-- Today, I started with the development of assets. I spent a lot of time analyzing what would be required.
-- I made curtains, couch, a king-looking seat, and some more stuff.
-- Then I developed models which would fill the remaining areas, like carpets, books, etc, to make the scene more filled.
-- I ended the day with almost 20% of assets, completed.
+
+- Started developing the environmental assets required for the house.
+- Created major furniture pieces including curtains, a couch, a king-style chair, and several decorative props.
+- Built supporting assets such as carpets, books, and miscellaneous decorations to make the environment feel naturally lived in.
+- Reached approximately 20% asset completion by the end of the day.
 
 ## 16th of July, 2026
-- I continued with the development of assets, such as a table, vase, plants, photos, etc.
-- I wasn't able to put much time today due to being involed in other tasks.
+
+- Continued expanding the asset library with tables, vases, plants, photo frames, and other decorative objects.
+- Progress was slower due to other commitments, but development remained on schedule.
 
 ## 17th of July, 2026
-- I booted up Roblox Studio and started making Walls and Floors in Blender, and imported all that to Roblox.
-- I textured walls and floors using Roblox Studio's in-built PBR Texturing System for better compatibility with Engine.
-- When I was done, I decided to do Doors, and eventually made staircases, giving access to the First Floor.
-- I was running out of ideas so I decided to follow how my House is designed.
+
+- Began constructing the house by modelling walls and floors in Blender before importing them into Roblox Studio.
+- Applied Roblox's built-in PBR material system to improve visual quality while maintaining engine compatibility.
+- Built doors, staircases, and the structural layout for the first floor.
+- Used my own house as a design reference whenever additional inspiration was needed, helping the environment feel more authentic.
 
 ## 18th of July, 2026
-- I finalized Ground Floor in Roblox Studio today itself, since all the assets were finalized and I was too lazy to add some more stuff on ground floor.
-- I began duplicating doors on the First Floor, and started with asset development for it again.
-- I spent most of my time designing Window, Photo Frames, and more varities of plants.
-- I placed all of it accordingly too.
+
+- Finalized the complete ground floor layout.
+- Began constructing and furnishing the first floor.
+- Designed additional windows, photo frames, plant variations, and other decorative assets before integrating them into the environment.
 
 ## 19th of July, 2026
-- I continued to develop more assets, that is, vases, and thought of making some cloths and add some dust particles over specific items since my game resembles the player revisiting his old house after ages.
-- I added all those assets.
+
+- Continued creating environmental props including additional vases and household decorations.
+- Introduced clothing props and subtle dust effects to reinforce the feeling of returning to a house that had remained untouched for years.
+- Integrated all newly created assets into the environment.
 
 ## 20th of July, 2026
-- I thought that the assets that are developed for now are way more than enough.
-- Now I decided to add some "Realism" to the game, for which I added Light Sources *INSIDE* the house.
-- This took a lot of time for Ground Floor, First Floor was TBD.
+
+- Concluded large-scale asset development and shifted focus toward improving environmental realism.
+- Implemented interior lighting across the ground floor with individually positioned light sources.
+- Dedicated most of the day to lighting refinement, leaving the first floor for completion later.
 
 ## 21st of July, 2026
-- Today, I finally setted up the In-Game Lighting. I added Atmosphere, adjusted tones, with more levels to density.
-- I made my own sky asset and fine-tuned it accordingly.
-- I added Blur and did some Color Correction too.
-- The game looked way better, and had finally had some life in it.
-- I ran MicroProfiler and In-built Performance Capturing to it and optimized the game. I was able to achieve the following:
-1) Memory from ~2.1GB to ~1.7GB
-2) CPU Util from ~33% to ~21%
-3) GPU Util from ~15% to ~7%
-> The main thing that I realized while doing Optimizations was how assets were being rendered when the Game Loaded, and I ran several tests and found a perfect setting.
-- I fixed the First Floor's Light Sources and Added Lighting to Lamps.
+
+- Completed the overall lighting setup using Atmosphere, Color Correction, Blur, and other post-processing effects.
+- Created and configured a custom sky to better match the intended atmosphere.
+- Performed optimization using Roblox MicroProfiler and built-in performance analysis tools, achieving the following improvements:
+
+  - Memory Usage: ~2.1 GB → ~1.7 GB
+  - CPU Utilization: ~33% → ~21%
+  - GPU Utilization: ~15% → ~7%
+
+- Identified asset loading behaviour as the primary performance bottleneck and adjusted rendering settings accordingly.
+- Completed the remaining first-floor lighting and implemented functional lamps throughout the house.
 
 ## 22nd of July, 2026
-- I made the fireplace working, a lot of tuning work was done:  (thanks to maths, I learnt graphs and this made my work a lot more easier hah!)
-- Today, I decided to not build anymore and start scripting, which includes the core gameplay, and player interactions and UX.
-- I started with scripting, and successfully coded a First Person Camera, with Bobbing after 4 hours.
-- I modified player speeds to be slower, disabled most of the UI, and disable jumping and no walk sound (sounded bad) for more realism.
-- Added creepy background music too!
-- Disabled more useless stuff + optimized backend.
-- Added a loading screen, which took most of my time of the day.
-- Fixed numerous amount of bugs.
+
+- Finished the interactive fireplace after extensive tuning of particle effects and animations.
+- Shifted development from environment building to gameplay programming.
+- Implemented a custom first-person camera system featuring movement bobbing.
+- Refined player movement by reducing walking speed, disabling unnecessary UI elements, removing jumping, and eliminating footstep sounds to better suit the intended atmosphere.
+- Added ambient background audio to strengthen immersion.
+- Developed a custom loading screen.
+- Performed backend optimizations and resolved numerous gameplay and scripting bugs.
 
 ## 23rd of July, 2026
-- I also commited the features that I was working on simultaneously since the beginning (happy that they are finally finished haha!):
-1) Introduction of the Story to the Player.
-2) Ending too!
-3) Alot more immersion stuff, with tons of bug fixes in my latest commit.
-> This almost took me a week. With background programming stuff.
-- Today I plan to finally begin with the Core Gameplay Development, which should be finished with 24 hours if everything goes accordingly to the plan. Good night!
+
+- Completed several systems that had been under development alongside the rest of the project, including:
+
+  1. Story introduction sequence.
+  2. Ending sequence.
+  3. Objective system.
+  4. Additional immersion features and extensive bug fixes.
+
+- Designed and implemented a custom objective system to guide player progression through the narrative, replacing the original demonstration framework with game-specific objectives and interaction tracking.
+- Refined the environmental lighting to achieve a more natural and believable appearance.
+- Revisited the core gameplay design and replaced generic collectible objects with meaningful household items that naturally belong within the environment, allowing exploration itself to drive the narrative.
+- Performed additional mesh and lighting optimizations, improving runtime performance by approximately 10% compared to previous builds.
+- Integrated the story, objective, and gameplay systems into a unified progression flow, ensuring exploration, interactions, and narrative events occur seamlessly.
+- With the environment, presentation systems, optimization, and narrative framework largely complete, the remaining focus is implementing the final object interactions and polishing the overall experience.
