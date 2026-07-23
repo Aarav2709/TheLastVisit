@@ -8,7 +8,7 @@ part.CanCollide = false
 part.CanTouch = false
 
 -- Reveal it after 300 seconds
-task.delay(300, function()
+task.delay(60, function()
 	part.Transparency = 0
 	part.CanCollide = true
 	part.CanTouch = true

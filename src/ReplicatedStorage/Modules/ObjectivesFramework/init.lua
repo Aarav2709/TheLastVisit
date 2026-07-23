@@ -59,20 +59,29 @@ end
 
 function objectivesframework.taskProgressSet(taskId, number)
 	local success, completed = taskController.taskProgressSet(taskId, number)
+
 	if success and completed then
-		print("Task Progress Set: "..taskId)
-		taskController.taskCompleted(taskId)
+		print("Task Progress Set: " .. taskId)
+
+		local markedComplete = taskController.taskCompleted(taskId)
+		if markedComplete then
+			eventsManager.taskCompleted()
+		end
 	end
 end
 
 function objectivesframework.taskProgressIncreased(taskId)
 	local success, completed = taskController.taskProgressIncreased(taskId)
+
 	if success and completed then
-		print("Task Progress Increased: "..taskId)
-		taskController.taskCompleted(taskId)
+		print("Task Progress Increased: " .. taskId)
+
+		local markedComplete = taskController.taskCompleted(taskId)
+		if markedComplete then
+			eventsManager.taskCompleted()
+		end
 	end
 end
-
 function objectivesframework.taskProgressDecreased(taskId)
 	local success = taskController.taskProgressDecreased(taskId)
 	if success then

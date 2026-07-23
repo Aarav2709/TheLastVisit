@@ -1,5 +1,14 @@
 local TweenService = game:GetService("TweenService")
 
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+local playerModule = require(
+	player:WaitForChild("PlayerScripts"):WaitForChild("PlayerModule")
+)
+
+local controls = playerModule:GetControls()
+
 local gui = script.Parent
 local bg = gui:WaitForChild("BG")
 local textLabel = bg:WaitForChild("TextLabel")
@@ -43,6 +52,18 @@ local function fadeOutBackgroundAndButton()
 	buttonTween.Completed:Wait()
 end
 
+-- Small bump effect for TextLabel when clicked
+local function playTextBumpEffect()
+	-- Create the scale-up and scale-down tweens for the bump effect on the text
+	local scaleUp = TweenService:Create(textLabel, TweenInfo.new(0.1), {TextSize = 30})  -- Increase text size slightly (bump effect)
+	local scaleDown = TweenService:Create(textLabel, TweenInfo.new(0.1), {TextSize = 24})  -- Return to original text size
+
+	-- Play the bump effect: scale up, then scale down
+	scaleUp:Play()
+	scaleUp.Completed:Wait() -- Wait for the scale-up tween to complete
+	scaleDown:Play() -- Play the scale-down tween
+end
+
 -- Function to handle player clicking to proceed
 local function waitForClick()
 	local clicked = false
@@ -80,20 +101,9 @@ local function applyHoverEffect()
 	end)
 end
 
--- Small bump effect for TextLabel when clicked
-local function playTextBumpEffect()
-	-- Create the scale-up and scale-down tweens for the bump effect on the text
-	local scaleUp = TweenService:Create(textLabel, TweenInfo.new(0.1), {TextSize = 30})  -- Increase text size slightly (bump effect)
-	local scaleDown = TweenService:Create(textLabel, TweenInfo.new(0.1), {TextSize = 24})  -- Return to original text size
-
-	-- Play the bump effect: scale up, then scale down
-	scaleUp:Play()
-	scaleUp.Completed:Wait() -- Wait for the scale-up tween to complete
-	scaleDown:Play() -- Play the scale-down tween
-end
-
 -- Main storytelling sequence
 local function playStory()
+	controls:Disable()
 	gui.Enabled = true -- Enable the GUI at the start
 
 	-- Apply the hover effect to the TextButton
@@ -116,6 +126,7 @@ local function playStory()
 
 	fadeOutBackgroundAndButton() -- Fade out the background and button after the story ends
 	gui.Enabled = false -- Disable the GUI after everything fades out
+	controls:Enable()
 end
 
 -- Start story progression
