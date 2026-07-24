@@ -1,7 +1,6 @@
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local disableControlsEvent = ReplicatedStorage:WaitForChild("DisableControlsEvent")
 local startCreditsEvent = ReplicatedStorage:WaitForChild("StartCreditsEvent")
 
 local part = script.Parent
@@ -169,7 +168,6 @@ local function playStory(gui, player)
 	end)
 
 	storyActive.Value = true
-	disableControlsEvent:FireClient(player, true)
 	gui.Enabled = true
 
 	for _,scene in ipairs(scenes) do
@@ -205,7 +203,6 @@ local function playStory(gui, player)
 
 	gui.Enabled = false
 	storyActive.Value = false
-	disableControlsEvent:FireClient(player, false)
 	startCreditsEvent:FireClient(player)
 
 end

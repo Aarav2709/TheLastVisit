@@ -176,8 +176,7 @@ function createConfigFromNode(configNode)
 
 	local cinematicBars = Instance.new("BoolValue")
 	cinematicBars.Name = "CinematicBars"
-	cinematicBars.Value = configNode:GetAttribute("Param_CinematicBars")
-	if cinematicBars.Value == nil then cinematicBars.Value = true end
+	cinematicBars.Value = true
 	cinematicBars:SetAttribute("TweenBars", configNode:GetAttribute("Param_TweenBars") or true)
 	cinematicBars.Parent = config
 
@@ -1914,8 +1913,8 @@ function createCinematicBars(config)
 		topBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		bottomBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 
-		topBar.ZIndex = -1
-		bottomBar.ZIndex = -1
+		topBar.ZIndex = 100
+		bottomBar.ZIndex = 100
 
 		topBar.Parent = script.Parent.Skins.Hotline
 		bottomBar.Parent = script.Parent.Skins.Hotline

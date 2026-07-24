@@ -31,7 +31,7 @@ local function createMemoryDialogue(lines)
 
 		InitialLayer = "Layer1",
 
-		SkinName = "Cinematic",
+		SkinName = "Interactive",
 
 		Layers = {
 
