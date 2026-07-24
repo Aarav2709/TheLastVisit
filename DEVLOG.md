@@ -82,6 +82,11 @@
 
 ## 24th of July, 2026
 
-- Integrated the story, objective, and gameplay systems into a unified progression flow.
-- Tested the objective system with placeholder dialogue. The complete loop functioned successfully, making the core game playable from beginning to end.
-- The remaining work is focused on final object interactions, dialogue, audio, bug fixes, and overall polish.
+- Completed the integration of the core gameplay progression systems, connecting the story, objective, interaction, and event systems into a complete playable loop.
+- Finalized and tested the objective progression system with placeholder dialogue, ensuring that player interactions correctly update objectives and progress the game from the beginning sequence to the ending sequence.
+- Implemented the final narrative flow, including the transition from the ending sequence into the end credits system, creating a smoother conclusion to the overall experience.
+- Improved the communication between different gameplay systems by replacing temporary solutions with more structured event-based systems, reducing dependency on hardcoded values and improving future scalability.
+- Resolved multiple critical bugs across the project, including objective completion detection, dialogue progression issues, event triggers, and player control states.
+- Continued refining the overall gameplay architecture by making systems more modular and reliable, preventing future issues caused by interconnected scripts.
+- Dedicated the entire day to development after taking a day off school, with the main focus being the completion of the core gameplay loop. More than 10 significant issues were identified and fixed while restructuring several systems to ensure stability.
+- The remaining work is focused on final object interactions, dialogue improvements, audio implementation, optimization, bug fixes, and overall presentation polish.

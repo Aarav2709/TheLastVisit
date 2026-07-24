@@ -1,6 +1,8 @@
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local disableControlsEvent = ReplicatedStorage:WaitForChild("DisableControlsEvent")
+local startCreditsEvent = ReplicatedStorage:WaitForChild("StartCreditsEvent")
 
 local part = script.Parent
 
@@ -99,7 +101,7 @@ end
 
 
 
-local function playStory(gui)
+local function playStory(gui, player)
 
 	local bg = gui:WaitForChild("BG")
 	local textLabel = bg:WaitForChild("TextLabel")
@@ -142,8 +144,6 @@ local function playStory(gui)
 
 	end
 
-
-
 	nextButton.MouseEnter:Connect(function()
 
 		TweenService:Create(
@@ -155,8 +155,6 @@ local function playStory(gui)
 		):Play()
 
 	end)
-
-
 
 	nextButton.MouseLeave:Connect(function()
 
@@ -170,21 +168,14 @@ local function playStory(gui)
 
 	end)
 
-
-
 	storyActive.Value = true
-
-
+	disableControlsEvent:FireClient(player, true)
 	gui.Enabled = true
-
-
 
 	for _,scene in ipairs(scenes) do
 
-
 		textLabel.Text = scene
 		textLabel.TextTransparency = 1
-
 
 		local fadeIn = TweenService:Create(
 			textLabel,
@@ -194,15 +185,10 @@ local function playStory(gui)
 			}
 		)
 
-
 		fadeIn:Play()
 		fadeIn.Completed:Wait()
 
-
-
 		waitClick()
-
-
 
 		local fadeOut = TweenService:Create(
 			textLabel,
@@ -212,26 +198,17 @@ local function playStory(gui)
 			}
 		)
 
-
 		fadeOut:Play()
 		fadeOut.Completed:Wait()
 
-
 	end
 
-
-
 	gui.Enabled = false
-
-
 	storyActive.Value = false
-
+	disableControlsEvent:FireClient(player, false)
+	startCreditsEvent:FireClient(player)
 
 end
-
-
-
-
 
 part.Touched:Connect(function(hit)
 
@@ -269,7 +246,7 @@ part.Touched:Connect(function(hit)
 
 
 
-	playStory(gui)
+	playStory(gui, player)
 
 
 end)
