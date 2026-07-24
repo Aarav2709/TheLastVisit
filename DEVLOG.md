@@ -89,4 +89,4 @@
 - Resolved multiple critical bugs across the project, including objective completion detection, dialogue progression issues, event triggers, and player control states.
 - Continued refining the overall gameplay architecture by making systems more modular and reliable, preventing future issues caused by interconnected scripts.
 - Dedicated the entire day to development after taking a day off school, with the main focus being the completion of the core gameplay loop. More than 10 significant issues were identified and fixed while restructuring several systems to ensure stability.
-- The remaining work is focused on final object interactions, dialogue improvements, audio implementation, optimization, bug fixes, and overall presentation polish.
+- Added sounds like footsteps, object interactions, background music and more!
