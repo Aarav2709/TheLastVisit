@@ -41,13 +41,23 @@ task.wait(7)
 
 local scenes = {
 
-	"It's been almost eight years since I last stepped into this house. After hearing it would finally be cleared out, I decided it was time for one last visit.",
+	"Almost eight years have passed since I last stood at this door.",
 
-	"I wasn't looking for anything in particular. Maybe I just wanted to see it one last time before it became someone else's memory.",
+	"When I heard the house was finally going to be cleared out, I knew I had to come back one last time.",
 
-	"Everything was exactly where it had been left. The walls, the furniture, even the silence felt strangely familiar.",
+	"I told myself I was only here to collect anything I had forgotten.",
 
-	"I thought I had left this place behind long ago. I didn't realize how much of it had quietly stayed with me."
+	"But deep down, I think I came here because I wasn't ready to let go.",
+
+	"This house was never meant to be just a building.",
+
+	"When it was first built, the people who created it left pieces of their lives behind. Not because they expected to stay forever, but because they wanted someone in the future to remember that they were here.",
+
+	"A reminder that every room, every object, and every moment once belonged to someone.",
+
+	"I never thought I would be the person returning to find those memories.",
+
+	"Maybe that is what time does. It turns ordinary moments into the ones we wish we could experience again."
 
 }
 
