@@ -2,7 +2,7 @@
 
 *A short first-person narrative experience created for LEVEL ZERO, Silico Battles Inter-School Competition.*
 
-<img src = "Banner.png">
+<img src = "preview/banner.png">
 
 ## Overview
 
